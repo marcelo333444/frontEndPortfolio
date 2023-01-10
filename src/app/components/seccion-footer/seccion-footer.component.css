@@ -1,0 +1,27 @@
+/* *********************/
+/* seccion F O O T E R */
+/* *********************/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+    transition: .5s;
+}
+
+footer a:hover {
+    color:  #5558fd;
+}
+
+
+
+

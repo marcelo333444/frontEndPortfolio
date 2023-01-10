@@ -1,0 +1,30 @@
+
+<div id="body">
+
+<div class="login-form">
+    <h1>Bienvenído</h1>
+    <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+
+        <label class="p" for="nombreUsuario">NÓMBRE USUÁRIO</label>
+
+        <input type="email" 
+               id="nombreUsuario" 
+               name="nombreUsuario" 
+               placeholder="Nombre de Usuario"
+               [(ngModel)]="nombreUsuario" required
+               >
+
+        <label class="p" for="password">CONTRASEÑA</label>
+
+        <input type="password" 
+               name="password" 
+               id="password"
+               placeholder="Contraseña"
+               [(ngModel)]="password" required
+               >
+
+        <button type="submit">Ingresá</button>
+
+    </form>
+</div>
+</div>

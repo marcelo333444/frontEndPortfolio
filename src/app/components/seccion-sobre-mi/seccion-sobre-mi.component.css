@@ -1,0 +1,175 @@
+/* *********************/
+/* seccion S O B R E  M I */
+/* *********************/
+
+#sobremi {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#sobremi .contenedor-foto {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    background: linear-gradient( #f3f3f3, rgba(33, 16, 16, 0.5));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#sobremi .contenedor-foto img {
+    border: 3px solid rgb(0, 0, 0);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: -70px;
+}
+
+#sobremi .btn {
+    padding: 2px;
+    text-align: end;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#sobremi .sobremi .row{
+    justify-content: center;
+    text-align: start;
+}
+
+#sobremi .btn a button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 8px;
+    background-color: #d3d3d3;
+    text-transform: uppercase;
+    color: black;
+    transition: .5s;
+}
+
+#sobremi .btn a button:hover {
+    background-color:  #5558fd;
+    color: aliceblue;
+}
+
+#sobremi .sobremi {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 5px;
+}
+
+#sobremi .sobremi .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2  {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi .table .btnf{
+    margin: 10px 10px;
+    padding: 5px 5px;
+    color: #000000;
+    cursor: pointer;
+    transition: .5s; 
+}
+
+#sobremi .sobremi .table .btnf:hover {
+    background-color: #000000;
+    color: #5558fd;
+    border-radius: 50%;
+}
+
+#sobremi .sobremi h3 {
+    margin-top: 20px;
+    text-align: start;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+
+#sobremi .sobremi .btn-descargar {
+    padding: 2px;
+    text-align: end;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#sobremi .sobremi .btn-descargar a button{
+    margin-top: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 8px;
+    background-color: #d3d3d3;
+    text-transform: uppercase;
+    color: black;
+    transition: .5s;
+}
+
+#sobremi .sobremi .btn-descargar a button:hover {
+    background-color:  #5558fd;
+    color: aliceblue;
+}
+
+#sobremi .sobremi .form-group .btn{
+    margin-top: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 8px;
+    background-color: #d3d3d3;
+    text-transform: uppercase;
+    color: black;
+    transition: .5s;
+}
+
+#sobremi .sobremi .form-group .btn:hover{
+    background-color:  #5558fd;
+    color: aliceblue;
+}
+
+/* seccion R E S P O N S I V E */
+
+
+@media screen and (max-width: 800px) {
+
+    /* seccion SOBRE MI */
+   
+    #sobremi .btn {
+        margin: 10px;
+        margin-top: 60px;   
+    }
+    #sobremi .btn a button{
+        width: 100%;
+    }
+    #sobremi .sobremi .btn-descargar a button{
+        width: 100%;
+    }
+
+}

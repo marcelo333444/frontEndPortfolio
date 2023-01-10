@@ -1,0 +1,30 @@
+<!-- seccion de habilidades -->
+<div class="contenedor-skills" id="skills">
+    <h3>HABILIDADES</h3>
+    <div class="row">
+        <div class="col-lg-2">
+            <button type="button" routerLink="/newskill" class="btn botonMod" *ngIf="isLogged">Nueva Skill</button>
+        </div>
+
+
+        <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+            <circle-progress [percent]="(skill.porcentaje)" [radius]="90" [imageSrc]="''" [title]="(skill.nombre)"
+                [titleColor]="'#5558fd'" [showTitle]="true" [showImage]="false" [imageHeight]="70" [imageWidth]="70"
+                [showUnits]="false" [showSubtitle]="false" [outerStrokeWidth]="16" [innerStrokeWidth]="2"
+                [outerStrokeColor]="' #5558fd'" [innerStrokeColor]="' #5558fd'" [animation]="true"
+                [animationDuration]="600">
+            </circle-progress>
+
+            <div>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-light" routerLink="/editkill/{{skill.id}}">
+                        <i class="fa-solid fa-pen-to-square"></i></button>
+                </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-primary" (click)="delete(skill.id)">
+                        <i class="fa-solid fa-trash"></i></button>
+                </td>
+            </div>
+        </div>
+    </div>
+</div>

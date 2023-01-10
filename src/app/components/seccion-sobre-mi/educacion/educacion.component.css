@@ -1,0 +1,20 @@
+h1{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}

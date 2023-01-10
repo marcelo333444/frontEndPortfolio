@@ -1,0 +1,25 @@
+<!-- seccion sobre mi -->
+<section id="sobremi">
+    
+
+    <div class="btn">
+        <a (click)="login()" *ngIf="!isLogged"><button>Acceder como Usuario</button></a>
+        <a (click)="onLogOut()" *ngIf="isLogged"><button>Cerrar Sesión</button></a>
+    </div>
+
+    <div class="sobremi">
+        <div class="row">
+            <div class="col-sm-11">
+                <h2>Sobre Mí</h2>
+                <app-experiencia></app-experiencia>
+                <app-educacion></app-educacion>
+            </div>
+        </div>
+
+        <div class="btn-descargar">
+            <a download="C/V: Feliziani Marcelo"
+                href="../../../assets/CV/MarceloFeliziani-CV.doc"><button>Descargar-CV</button> </a>
+        </div>
+    </div>
+
+</section>

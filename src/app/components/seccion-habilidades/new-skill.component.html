@@ -1,0 +1,29 @@
+<div id="body">
+    <div class="container">
+        <div>
+            <form class="formPrincipal" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="formulario">
+                    <label for="nombre">Nueva Habilidad</label>
+                    <input type="text" 
+                           class="form-control"
+                           id="nombre"
+                           name="nombre"
+                           [(ngModel)]="nombre"
+                           required
+                           >
+                </div>
+                <div class="formulario">
+                    <label for="porcentaje">Porcentaje de la Habilidad</label>
+                    <input type="text" 
+                           class="form-control"
+                           id="porcentaje"
+                           name="porcentaje"
+                           [(ngModel)]="porcentaje"
+                           required
+                           >
+                </div>
+                <button id="botonMod">Agregar Habilidad</button>
+            </form>
+        </div>
+    </div>
+</div>

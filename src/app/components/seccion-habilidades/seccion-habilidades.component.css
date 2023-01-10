@@ -1,0 +1,59 @@
+/* *********************/
+/* seccion S K I L L S */
+/* *********************/
+
+.contenedor-skills {
+    background: linear-gradient(#373744, rgba(33, 16, 16, 0.5)), url("../../../assets/img/img3.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contenedor-skills .row {
+
+    padding: 20px;
+}
+
+.contenedor-skills .circulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-skills .botonMod {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 8px;
+    background-color: #d3d3d3;
+    text-transform: uppercase;
+    color: black;
+    transition: .5s;
+}
+
+.contenedor-skills .botonMod:hover {
+    background-color: #5558fd;
+    color: aliceblue;
+}
+
+
+
+
+
+/* *********************/
+/* seccion R E S P O N S I V E */
+/* *********************/
+
+
+@media screen and (max-width: 800px) {
+
+    /* seccion HABLIDADES MI */
+    .contenedor-skills {
+        padding: 50px 20px;
+    }
+}

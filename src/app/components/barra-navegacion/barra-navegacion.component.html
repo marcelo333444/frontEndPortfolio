@@ -1,0 +1,44 @@
+<!-- Barra de navegacion -->
+<section id="inicio">
+    <div class="contenido">
+        <header>
+            <div class="contenido-header">
+                <h1>/MF/</h1>
+                <nav id="nav" class="">
+                    <ul id="links">
+                        <li><a href="#inicio" class="seleccionar" onclick="seleccionar(this)">Inicio</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar(this)">Sobre Mi</a></li>
+                        <li><a href="#servicios" onclick="seleccionar(this)">Servicios</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar(this)">Portfolio</a></li>
+                        <!-- <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li> -->
+                    </ul>
+                </nav>
+                <!-- Iconos del menu responsive -->
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- Iconos de las redes sociales -->
+                <div class="redes">
+                    <a href="https://wa.me/5212616450814"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://t.me//Marcelo333444"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://github.com/marcelo333444"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/marcelo-feliziani-85a165249"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </header>
+        <!-- Presentacion -->
+        <div class="presentacion">
+            
+            <div class="contenedor-foto">
+                <img src={{persona.img}} id="foto1" alt="foto">
+                <button type="button" id="botonMod" routerLink="/editacercade/1" *ngIf="isLogged">
+                    Editar Persona
+                </button>
+            </div>
+            <h2>Soy<span>{{persona.nombre}} {{persona.apellido}}</span>, Full Stack Jr.</h2>
+            <p class="descripcion">{{persona.descripcion}}</p>
+            <a href="#portfolio">Ir a Portafolio</a>
+        </div>
+    </div>
+</section>
