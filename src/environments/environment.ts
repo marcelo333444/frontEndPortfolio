@@ -3,9 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+
   production: false,
-  URL: 'http://localhost:8080',
-  //URL: '',
+  URL: 'https://backendrepository-production.up.railway.app/'
 };
 
 /*
