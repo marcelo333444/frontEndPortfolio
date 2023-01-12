@@ -29,6 +29,9 @@ import { EditSkillComponent } from './components/seccion-habilidades/edit-skill.
 import { NewSkillComponent } from './components/seccion-habilidades/new-skill.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { EditacercadeComponent } from './components/barra-navegacion/editacercade.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 @NgModule({
@@ -60,7 +63,9 @@ import { EditacercadeComponent } from './components/barra-navegacion/editacercad
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [CargarScriptsService,
               interceptorProvider],

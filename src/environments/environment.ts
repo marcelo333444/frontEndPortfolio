@@ -3,6 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  firebase: {
+    projectId: 'forntendportfolio',
+    appId: '1:1573007932:web:501ac1e056d3b9abf3c939',
+    storageBucket: 'forntendportfolio.appspot.com',
+    locationId: 'southamerica-east1',
+    apiKey: 'AIzaSyBmzA835Im6KkcOlXF5qUpaNRrV3uMkm1Y',
+    authDomain: 'forntendportfolio.firebaseapp.com',
+    messagingSenderId: '1573007932',
+    measurementId: 'G-7MH8G1EELP',
+  },
 
   production: false,
   URL: 'https://backendrepository-production.up.railway.app/'
