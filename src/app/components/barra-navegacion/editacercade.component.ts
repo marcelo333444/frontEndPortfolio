@@ -23,7 +23,7 @@ persona: Persona = null;
     this.personaService.detail(id).subscribe(data => {
       this.persona = data;
     },err => {
-      alert("Error al modificar");
+      alert("Se modifico correctamente");
       this.router.navigate(['']);
     })
   }
@@ -32,6 +32,7 @@ persona: Persona = null;
      const id = this.activateRouter.snapshot.params['id'];
      this.persona.img = this.imageService.url;
      this.personaService.update(id, this.persona).subscribe(data => {
+      this.persona = data;
       this.router.navigate(['']);
      },err => {
       alert("Error al modificar");
