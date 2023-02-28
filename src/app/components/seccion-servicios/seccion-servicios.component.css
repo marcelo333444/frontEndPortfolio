@@ -61,10 +61,11 @@
 }
 
 #servicios .fila .servicio ul {
-    list-style: none;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-bottom: 10px;
+    margin-left: -25px;
 }
 
 #servicios .fila .servicio p {
