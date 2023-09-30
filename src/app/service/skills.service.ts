@@ -10,7 +10,7 @@ import { Skills } from '../model/skills';
 export class SkillsService {
 
   //URL = 'http://localhost:8080/skill/';
-  //URL = 'https://backendrepository-production.up.railway.app/skill/';
+  //URL = 'https://backend-mf.onrender.com/skill/';
   URL = environment.URL + 'skill/';
   constructor(private httpClient: HttpClient) { }
 

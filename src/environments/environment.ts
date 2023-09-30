@@ -15,7 +15,7 @@ export const environment = {
   },
 
   production: false,
-  URL: 'https://backendrepository-production.up.railway.app/'
+  URL: 'https://backend-mf.onrender.com/'
 };
 
 /*

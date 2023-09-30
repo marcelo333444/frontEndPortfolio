@@ -12,7 +12,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 export class AuthService {
 
 //autURL = 'http://localhost:8080/auth/';
-//autURL = 'https://backendrepository-production.up.railway.app/auth/';
+//autURL = 'https://backend-mf.onrender.com/auth/';
    URL = environment.URL + 'auth/';
    
   constructor(private httpClient: HttpClient) { }

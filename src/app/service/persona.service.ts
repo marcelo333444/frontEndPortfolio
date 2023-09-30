@@ -12,7 +12,7 @@ import { Persona } from '../model/persona.model';
 
 export class PersonaService {
     //URL = 'http://localhost:8080/persona/';
-    //URL = 'https://backendrepository-production.up.railway.app/persona/';
+    //URL = 'https://backend-mf.onrender.com/persona/';
     URL = environment.URL + 'persona/';
     constructor(private htttpClient: HttpClient) { }
 

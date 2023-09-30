@@ -10,7 +10,7 @@ import { Educacion } from '../model/educacion';
 export class EducacionService {
 
   //URL = 'http://localhost:8080/educacion/';
-  //URL = 'https://backendrepository-production.up.railway.app/educacion/';
+  //URL = 'https://backend-mf.onrender.com/educacion/';
   URL = environment.URL + 'educacion/';
   constructor(private htttpClient: HttpClient) { }
 
